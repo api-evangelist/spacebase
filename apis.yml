@@ -1,7 +1,28 @@
 aid: spacebase
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spacebase.png
 name: Spacebase
-description: Spacebase is a company surfaced as a portfolio company of point-nine and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Spacebase is an online marketplace for booking meeting rooms, event venues,
+  and flexible workspaces, connecting businesses and event planners with more
+  than 18,000 unique spaces across 4,000+ venues in 12 countries and 550+
+  destinations. The platform offers self-service online booking with transparent
+  pricing, instant confirmation, add-on extras such as WiFi and catering, and a
+  Spacebase booking guarantee, alongside consultant support for complex bookings
+  and business accounts with negotiated rates and monthly invoicing. Spacebase
+  is a portfolio company of Point Nine. This profile was enriched by the API
+  Evangelist pipeline; the company operates a consumer/business booking
+  marketplace and publishes no public developer API surface.
 url: https://raw.githubusercontent.com/api-evangelist/spacebase/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Meeting Rooms
+- Event Spaces
+- Coworking
+- Workspace Booking
+- Venue Marketplace
+- Bookings
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/spacebase-domain-security.yml
 - type: Website
   url: https://www.spacebase.com/en
+- type: Pricing
+  url: https://business.spacebase.com/pricing
+- type: Support
+  url: https://help.spacebase.com
+- type: PrivacyPolicy
+  url: https://www.spacebase.com/en/policies/privacy/
+- type: TermsOfService
+  url: https://www.spacebase.com/en/policies/terms/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
